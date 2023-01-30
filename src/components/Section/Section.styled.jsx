@@ -8,11 +8,11 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 25px;
-  line-height: 1.1;
-  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: 500;
 
   color: #191970;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 `;

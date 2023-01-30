@@ -7,9 +7,9 @@ export const ButtonList = styled.ul`
 `;
 
 export const Button = styled.li`
-  font-size: 10px;
-  line-height: 1.1;
-  font-weight: 200;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 400;
   text-transform: capitalize;
 
   background-color: #000080;
@@ -22,19 +22,21 @@ export const Button = styled.li`
 
   padding: 4px 10px 4px 10px;
 
-  border: 1px solid #f5f5f5;
-  border-radius: 4px;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
 
+  user-select: none;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.1, 0.7, 0.6, 0.9),
     font-weight 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9),
     background-color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9),
     box-shadow 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9),
-    font-size 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
+    font-size 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9),
+    border 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9);
 
   :hover {
-    font-weight: 400;
-    font-size: 11px;
+    font-weight: 500;
+    font-size: 35px;
 
     border: none;
 

@@ -5,8 +5,8 @@ export const StatList = styled.ul`
 `;
 
 export const StatItem = styled.li`
-  font-size: 16px;
-  line-height: 1.1;
+  font-size: 35px;
+  line-height: 1.5;
   font-weight: 500;
   text-transform: capitalize;
 
@@ -18,8 +18,8 @@ export const StatItem = styled.li`
 `;
 
 export const StatCount = styled.p`
-  font-size: 16px;
-  line-height: 1.1;
+  font-size: 40px;
+  line-height: 1.5;
   font-weight: 700;
   text-transform: capitalize;
 
