@@ -4,9 +4,10 @@ export const ButtonList = styled.ul`
   list-style: none;
 
   display: flex;
+  height: 60px;
 `;
 
-export const Button = styled.li`
+export const Button = styled.button`
   font-size: 30px;
   line-height: 1.4;
   font-weight: 400;
@@ -15,10 +16,6 @@ export const Button = styled.li`
   background-color: #000080;
 
   color: #e8e8e8;
-
-  :not(:last-child) {
-    margin-right: 4px;
-  }
 
   padding: 4px 10px 4px 10px;
 
@@ -77,5 +74,11 @@ export const Button = styled.li`
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+`;
+
+export const ButtonWrapper = styled.li`
+  :not(:last-child) {
+    margin-right: 4px;
   }
 `;
