@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
 
-  padding: 50px 15px 5px 15px;
+  padding: 15px 15px 5px 15px;
 `;
 
 export const Title = styled.h2`
