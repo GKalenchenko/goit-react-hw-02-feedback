@@ -5,9 +5,8 @@ export const FeedbackOptions = ({ buttonEntries, onClick }) => {
   return (
     <ButtonList>
       {buttonEntries.map((button, idx) => (
-        <ButtonWrapper>
+        <ButtonWrapper key={idx}>
           <Button
-            key={idx}
             type="button"
             onClick={() => onClick(button)}
             buttonType={button[0]}
