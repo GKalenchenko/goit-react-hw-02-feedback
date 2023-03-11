@@ -37,48 +37,51 @@ export const Button = styled.button`
 
     border: none;
 
-    color: ${({ buttonType }) => {
-      let color = null;
-      switch (buttonType) {
-        case 'good':
-          color = '#0BDA51';
-          break;
-        case 'neutral':
-          color = '	#A9A9A9';
-          break;
-        case 'bad':
-          color = '	#FF3131 ';
-          break;
-        default:
-          throw new Error('unexpected button');
-      }
-      return color;
-    }};
-    background-color: ${({ buttonType }) => {
-      let color = null;
-      switch (buttonType) {
-        case 'good':
-          color = '#228B22';
-          break;
-        case 'neutral':
-          color = '	#808080';
-          break;
-        case 'bad':
-          color = '	#A80000  ';
-          break;
-        default:
-          throw new Error('unexpected button');
-      }
-      return color;
-    }};
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    :not(:last-child) {
+      margin-right: 4px;
+    }
   }
 `;
 
-export const ButtonWrapper = styled.li`
-  :not(:last-child) {
-    margin-right: 4px;
-  }
-`;
+// export const ButtonWrapper = styled.li`
+// :not(:last-child) {
+//   margin-right: 4px;
+// }
+// `;
+
+// color: ${({ buttonType }) => {
+//   let color = null;
+//   switch (buttonType) {
+//     case 'good':
+//       color = '#0BDA51';
+//       break;
+//     case 'neutral':
+//       color = '	#A9A9A9';
+//       break;
+//     case 'bad':
+//       color = '	#FF3131 ';
+//       break;
+//     default:
+//       throw new Error('unexpected button');
+//   }
+//   return color;
+// }};
+// background-color: ${({ buttonType }) => {
+//   let color = null;
+//   switch (buttonType) {
+//     case 'good':
+//       color = '#228B22';
+//       break;
+//     case 'neutral':
+//       color = '	#808080';
+//       break;
+//     case 'bad':
+//       color = '	#A80000  ';
+//       break;
+//     default:
+//       throw new Error('unexpected button');
+//   }
+//   return color;
+// }};

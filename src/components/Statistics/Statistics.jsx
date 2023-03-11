@@ -1,15 +1,11 @@
 import PropTypes from 'prop-types';
 import { StatCount, StatItem, StatList } from './Statistics.styled';
 
-export const Statistics = ({ statsData, total, positivePercentage }) => {
+export const Statistics = ({ {goodFeedback}, total, positivePercentage }) => {
   return (
     <>
       <StatList>
-        {statsData.map(stat => (
-          <StatItem key={stat[0]}>
-            {stat[0]}: {stat[1]}
-          </StatItem>
-        ))}
+        <StatItem></StatItem>
       </StatList>
       <StatCount>Total: {total}</StatCount>
       <StatCount>Positive feedback: {positivePercentage}</StatCount>

@@ -1,24 +1,36 @@
 import PropTypes from 'prop-types';
 import { Button, ButtonList, ButtonWrapper } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ buttonEntries, onClick }) => {
+export const FeedbackOptions = ({ onClick }) => {
   return (
     <ButtonList>
-      {buttonEntries.map((button, idx) => (
-        <ButtonWrapper key={idx}>
-          <Button
-            type="button"
-            onClick={() => onClick(button)}
-            buttonType={button[0]}
-          >
-            {button[0]}
-          </Button>
-        </ButtonWrapper>
-      ))}
+      <Button
+        type="button"
+        name={'Good'}
+        onClick={({ currentTarget }) => onClick(currentTarget.name)}
+      >
+        {'Good'}
+      </Button>{' '}
+      <Button
+        type="button"
+        name={'Neutral'}
+        onClick={({ currentTarget }) => onClick(currentTarget.name)}
+        buttonType={'Neutral'}
+      >
+        {'Neutral'}
+      </Button>{' '}
+      <Button
+        type="button"
+        name={'Bad'}
+        onClick={({ currentTarget }) => onClick(currentTarget.name)}
+        buttonType={'Bad'}
+      >
+        {'Bad'}
+      </Button>
     </ButtonList>
   );
 };
 
 FeedbackOptions.propTypes = {
-  buttonName: PropTypes.arrayOf(PropTypes.string),
+  onClick: PropTypes.func.isRequired,
 };
